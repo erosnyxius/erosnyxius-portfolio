@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, Database, Workflow, Cloud, Zap, Server, Globe, Terminal, Braces, Layers } from "lucide-react";
+import { Sparkles, Database, Workflow, Cloud, Zap, Server, Globe, Terminal, Braces, Layers, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -98,22 +98,20 @@ export default function Hero() {
       <div className="text-center space-y-6 sm:space-y-8 max-w-4xl z-10 px-4">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-border bg-secondary/50 text-xs sm:text-sm text-muted-foreground">
-          <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
-          <span>Available for new opportunities</span>
+          <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
+          <span>From Dhaka, Bangladesh</span>
         </div>
 
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-          Creative Developer
+          <span className="whitespace-nowrap">Hi, I&apos;m Mahtabul Shourav</span>
           <br />
-          <span className="text-gradient">& Designer</span>
+          <span className="text-gradient text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Software Engineer</span>
         </h1>
 
         {/* Description */}
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
-          I craft beautiful digital experiences with modern technologies.
-          Passionate about creating intuitive interfaces and scalable solutions
-          that make a difference.
+          Crafting scalable, high-performance web applications with React/Next.js, FastAPI/Express, and clean, efficient PostgreSQL system design.
         </p>
 
         {/* CTA Buttons */}
@@ -122,7 +120,7 @@ export default function Hero() {
             <a href="#projects">View My Work</a>
           </Button>
           <Button asChild variant="outline" size="sm" className="px-4 py-2 text-xs sm:text-sm sm:px-6 sm:py-2.5">
-            <a href="#contact">Let&apos;s Talk</a>
+            <a href="/resume.pdf" download className="flex items-center gap-2"><Download className="w-4 h-4" />Resume</a>
           </Button>
         </div>
       </div>

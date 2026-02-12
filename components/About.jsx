@@ -1,6 +1,7 @@
 "use client";
 
-import { User, MapPin, Calendar } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
@@ -12,25 +13,18 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
             About Me
           </h2>
-          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">
-            Get to know me better - my background, passions, and what drives me
-            to create exceptional digital experiences.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image/Avatar Section */}
           <div className="flex justify-center">
-            <div className="relative">
-              <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-2xl bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 border border-border shadow-2xl shadow-black/50 flex items-center justify-center overflow-hidden">
-                <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-xl bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
-                  <User className="w-24 h-24 sm:w-32 sm:h-32 text-gray-400" />
-                </div>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-white/10 to-white/5 rounded-xl border border-white/10 animate-float" />
-              <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-gray-500/20 to-gray-600/20 rounded-xl border border-gray-500/20 animate-float-delayed" />
-            </div>
+            <Image
+              src="/profile/Myself.jpg"
+              alt="Profile Photo"
+              width={320}
+              height={320}
+              className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl object-cover shadow-2xl shadow-black/50"
+            />
           </div>
 
           {/* Content Section */}
