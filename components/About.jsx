@@ -19,7 +19,7 @@ export default function About() {
           {/* Image/Avatar Section */}
           <div className="flex justify-center">
             <Image
-              src="/profile/Myself.jpg"
+              src="/profile/Selfie.jpg"
               alt="Profile Photo"
               width={320}
               height={320}
@@ -31,7 +31,7 @@ export default function About() {
           <div className="space-y-5 sm:space-y-6 text-center md:text-left">
             <div className="space-y-3 sm:space-y-4">
               <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
-                Hello, I&apos;m a Creative Developer
+                I&apos;m Mahtabul Shourav
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 I&apos;m a passionate full-stack developer and designer with over 5 years

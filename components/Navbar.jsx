@@ -4,18 +4,30 @@ import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Services", href: "#services" },
-  { name: "Tech", href: "#tech" },
-  { name: "Education", href: "#education" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "" },
+  { name: "Experience", href: "experience" },
+  { name: "Projects", href: "projects" },
+  { name: "Services", href: "services" },
+  { name: "Tech", href: "tech" },
+  { name: "Education", href: "education" },
+  { name: "Contact", href: "contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    if (!sectionId) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +65,8 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href="#"
+                  onClick={(e) => scrollToSection(e, link.href)}
                   className="px-3 xl:px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary"
                 >
                   {link.name}
@@ -110,8 +123,11 @@ export default function Navbar() {
               {navLinks.map((link, index) => (
                 <a
                   key={link.name}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  href="#"
+                  onClick={(e) => {
+                    scrollToSection(e, link.href);
+                    setIsOpen(false);
+                  }}
                   className={`group flex items-center justify-between py-4 border-b border-border/20 transition-all duration-500 ${
                     isOpen
                       ? "opacity-100 translate-x-0"

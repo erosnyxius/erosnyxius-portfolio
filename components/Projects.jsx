@@ -70,7 +70,6 @@ const projects = [
 
 export default function Projects() {
   const featuredProjects = projects.filter((p) => p.featured);
-  const otherProjects = projects.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="py-16 sm:py-24 px-4 sm:px-6">
@@ -87,7 +86,7 @@ export default function Projects() {
         </div>
 
         {/* Featured Projects */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {featuredProjects.map((project, index) => (
             <Card
               key={index}
@@ -131,58 +130,6 @@ export default function Projects() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Other Projects */}
-        <div>
-          <h3 className="text-xl font-semibold text-foreground mb-6">
-            Other Notable Projects
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
-              <Card
-                key={index}
-                className="group hover:border-foreground/30 transition-all duration-300"
-              >
-                <CardHeader className="pb-2">
-                  <div className="flex items-center justify-between">
-                    <Folder className="w-10 h-10 text-muted-foreground" />
-                    <div className="flex gap-2">
-                      <a
-                        href={project.github}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <Github className="w-5 h-5" />
-                      </a>
-                      <a
-                        href={project.live}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    </div>
-                  </div>
-                  <CardTitle className="text-lg mt-4">{project.title}</CardTitle>
-                  <CardDescription className="text-sm">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs text-muted-foreground"
-                      >
-                        {tag}
-                        {project.tags.indexOf(tag) < project.tags.length - 1 && " •"}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
       </div>
     </section>

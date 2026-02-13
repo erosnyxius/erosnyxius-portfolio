@@ -1,6 +1,7 @@
 "use client";
 
-import { Sparkles, Database, Workflow, Cloud, Zap, Server, Globe, Terminal, Braces, Layers, MapPin, Download } from "lucide-react";
+import Image from "next/image";
+import { Database, Workflow, Cloud, Zap, Server, Globe, Terminal, Braces, Layers, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -102,6 +103,19 @@ export default function Hero() {
           <span>From Dhaka, Bangladesh</span>
         </div>
 
+        {/* Profile Image */}
+        <div className="flex justify-center">
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 rounded-2xl overflow-hidden ring-1 ring-white/10">
+            <Image
+              src="/profile/Selfie.jpg"
+              alt="Mahtabul Shourav"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
           <span className="whitespace-nowrap">Hi, I&apos;m Mahtabul Shourav</span>
@@ -111,7 +125,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
-          Crafting scalable, high-performance web applications with React/Next.js, FastAPI/Express, and clean, efficient PostgreSQL system design.
+          Crafting scalable, high-performance backend systems and web applications with React/Next.js, FastAPI/Express, and clean, efficient PostgreSQL system design.
         </p>
 
         {/* CTA Buttons */}

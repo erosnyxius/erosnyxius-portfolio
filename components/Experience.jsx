@@ -6,31 +6,22 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
+    title: "Junior Software Engineer",
+    company: "Zipto",
+    location: "Banani, Dhaka, Bangladesh",
+    period: "Jan, 2026 - Present",
     description:
       "Leading development of enterprise-scale applications. Architecting microservices and implementing CI/CD pipelines. Mentoring junior developers and conducting code reviews.",
     skills: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    location: "Remote",
-    period: "2020 - 2022",
+    title: "Intern",
+    company: "Lynkeus AI - 린케우스",
+    location: "Gulshan 2, Dhaka, Bangladesh",
+    period: "Feb 2024 - April 2025",
     description:
-      "Developed and maintained multiple client projects. Built RESTful APIs and responsive frontends. Implemented authentication systems and payment integrations.",
-    skills: ["Vue.js", "Python", "MongoDB", "Redis", "GraphQL"],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Creative Agency Co.",
-    location: "New York, NY",
-    period: "2019 - 2020",
-    description:
-      "Created pixel-perfect UI implementations from design mockups. Optimized web performance and accessibility. Collaborated with designers and backend teams.",
-    skills: ["JavaScript", "React", "SCSS", "Webpack", "Figma"],
+      "Collaborated on developing a desktop-based real-time Pedestrian Detection prototype. Supported the optimization of License Plate Recognition (LPR) models by managing data pre-processing, image annotation, and conducting inference tests. Maintained accurate technical documentation to streamline team development workflows.",
+    skills: [ "Python", "PyQt5", "OpenCV", "Numpy", "YOLOv8", "Roboflow", "Git"],
   },
 ];
 

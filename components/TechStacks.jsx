@@ -98,36 +98,6 @@ export default function TechStacks() {
             </div>
           ))}
         </div>
-
-        {/* Additional Skills */}
-        <div className="mt-16 text-center">
-          <h3 className="text-xl font-semibold text-foreground mb-6">
-            Also Familiar With
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Figma",
-              "Adobe XD",
-              "Electron",
-              "WebSockets",
-              "Three.js",
-              "Stripe",
-              "OAuth",
-              "Jest",
-              "Cypress",
-              "Storybook",
-              "Webpack",
-              "Vite",
-            ].map((skill, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 text-sm text-muted-foreground border border-border/50 rounded-full hover:border-border hover:text-foreground transition-colors duration-200"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

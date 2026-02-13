@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
@@ -29,7 +29,6 @@ export default function Home() {
       <Navbar />
       <main className="relative z-10">
         <Hero />
-        <About />
         <Experience />
         <Projects />
         <Services />
