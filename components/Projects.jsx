@@ -80,8 +80,7 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">
-            A selection of projects I&apos;ve worked on, showcasing my skills in
-            full-stack development and design.
+            A selection of projects I&apos;ve worked on
           </p>
         </div>
 

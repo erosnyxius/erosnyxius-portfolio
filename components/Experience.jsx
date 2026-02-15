@@ -35,8 +35,7 @@ export default function Experience() {
             Experience
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">
-            My professional journey through the tech industry, building products
-            and growing as a developer.
+            My professional journey through the tech industry
           </p>
         </div>
 

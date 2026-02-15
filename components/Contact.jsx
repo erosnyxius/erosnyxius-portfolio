@@ -70,7 +70,7 @@ export default function Contact() {
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">
             Have a project in mind or want to collaborate? I&apos;d love to hear from
-            you. Let&apos;s create something amazing together.
+            you.
           </p>
         </div>
 
@@ -129,18 +129,6 @@ export default function Contact() {
             </div>
 
             {/* Availability */}
-            <div className="p-6 rounded-xl border border-border bg-gradient-to-br from-secondary/50 to-transparent">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                <span className="text-sm font-medium text-foreground">
-                  Available for work
-                </span>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                I&apos;m currently open to new opportunities and exciting projects.
-                Response time: within 24 hours.
-              </p>
-            </div>
           </div>
 
           {/* Contact Form */}

@@ -186,8 +186,7 @@ export default function Services() {
             My Services
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">
-            Comprehensive digital solutions tailored to your needs. From concept
-            to deployment, I&apos;ve got you covered.
+            Comprehensive digital solutions tailored to your needs.
           </p>
         </div>
 

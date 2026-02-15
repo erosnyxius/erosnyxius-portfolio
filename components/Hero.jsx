@@ -117,10 +117,10 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
           <span className="whitespace-nowrap">Hi, I&apos;m Mahtabul Shourav</span>
           <br />
-          <span className="text-gradient text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Software Engineer</span>
+          <span className="text-gradient text-lg sm:text-xl md:text-2xl lg:text-3xl">Software Engineer</span>
         </h1>
 
         {/* Description */}
