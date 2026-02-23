@@ -1,46 +1,46 @@
 "use client";
 
 import Image from "next/image";
-import { Code, Palette, Rocket, Shield, Smartphone, Zap } from "lucide-react";
+import { Code,Settings,Link ,GitBranch,Puzzle,Cpu,Route, ShieldCheck} from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Code,
-    title: "Web Development",
-    description:
-      "Building responsive, performant web applications using modern frameworks and best practices.",
-  },
-  {
-    icon: Palette,
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive user interfaces with a focus on user experience and accessibility.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description:
-      "Developing cross-platform mobile applications that deliver native-like experiences.",
-  },
-  {
-    icon: Rocket,
-    title: "Performance Optimization",
-    description:
-      "Improving application speed and efficiency through code optimization and caching strategies.",
-  },
-  {
-    icon: Shield,
-    title: "Security Implementation",
-    description:
-      "Implementing robust security measures to protect your data and users.",
-  },
-  {
-    icon: Zap,
-    title: "API Development",
-    description:
-      "Designing and building scalable RESTful and GraphQL APIs for seamless integrations.",
-  },
+  icon: Code,
+  title: "Custom Web App Development",
+  description:
+    "Designing and building tailored web applications to streamline internal operations and business workflows.",
+},
+{
+  icon: Settings,
+  title: "Business Process Automation",
+  description:
+    "Automating repetitive and manual business processes using reliable, code-first automation systems.",
+},
+{
+  icon: Route,
+  title: "API Development & Integration",
+  description:
+    "Developing secure APIs and integrating third-party services to connect systems and enable seamless data flow.",
+},
+{
+  icon: GitBranch,
+  title: "N8N Workflow Orchestration",
+  description:
+    "Implementing event-driven workflows using n8n and custom logic to synchronize tools, services, and data.",
+},
+{
+  icon: Puzzle,
+  title: "Feature Enhancements & Extensions",
+  description:
+    "Adding new features, improving existing workflows, and extending functionality in already deployed systems.",
+},
+{
+  icon: Cpu,
+  title: "Programming Basics with Projects & AI",
+  description:
+    "Teaching foundational Python and JavaScript skills through practical projects, using AI tools to assist in coding, problem-solving, and software development.",
+}
 ];
 
 const processSteps = [

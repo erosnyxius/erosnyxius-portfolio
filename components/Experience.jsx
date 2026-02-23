@@ -8,11 +8,11 @@ const experiences = [
   {
     title: "Junior Software Engineer",
     company: "Zipto",
-    location: "Banani, Dhaka, Bangladesh",
+    location: "Dhanmondi 15A, Dhaka, Bangladesh",
     period: "Jan, 2026 - Present",
     description:
       "Leading development of enterprise-scale applications. Architecting microservices and implementing CI/CD pipelines. Mentoring junior developers and conducting code reviews.",
-    skills: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"],
+    skills: ["TypeScript","Supabase", "PostgreSQL",],
   },
   {
     title: "Intern",
