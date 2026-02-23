@@ -6,20 +6,12 @@ import { Badge } from "@/components/ui/badge";
 
 const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    period: "2017 - 2019",
-    description:
-      "Specialized in Artificial Intelligence and Human-Computer Interaction. Research focused on machine learning applications in user experience design.",
-    achievements: ["Dean's List", "Research Assistant", "GPA: 3.9/4.0"],
-  },
-  {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "MIT",
-    period: "2013 - 2017",
+    degree: "Bachelor of Science in Computer Science & Engineering",
+    institution: "Bangladesh University (BU)",
+    period: "2023 - Running (3rd Year)",
     description:
       "Comprehensive education in software development, algorithms, and system design. Active member of the Computer Science Society.",
-    achievements: ["Summa Cum Laude", "Hackathon Winner", "GPA: 3.8/4.0"],
+    achievements: ["Programming Trainer", "Hackathon Winner", "GPA: 3.8/4.0"],
   },
 ];
 

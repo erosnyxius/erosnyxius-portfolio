@@ -11,20 +11,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@portfolio.com",
-    href: "mailto:hello@portfolio.com",
+    value: "mahtabulsourav@gmail.com",
+    href: "mailto:mahtabulsourav@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "San Francisco, CA",
-    href: null,
+    value: "+8801607025114",
+    href: "tel:+8801607025114",
   },
 ];
 

@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Portfolio | Creative Developer",
+  title: "Mahtabul Shourav - Software Engineer",
   description: "Personal portfolio showcasing projects, skills, and experience",
 };
 
